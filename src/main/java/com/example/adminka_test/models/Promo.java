@@ -14,6 +14,8 @@ public class Promo {
     private String id;
 
     private String promoName;
+    private String promoService;
+    private String promoLink;
     private Integer value;
     private Boolean status;
 
@@ -21,9 +23,17 @@ public class Promo {
         return status;
     }
 
+    public String getPromoService() {
+        return promoService;
+    }
+
+
+
     public Integer getValue() {
         return value;
     }
+
+    public String getPromoLink() {return promoLink;}
 
     public String getId() {
         return id;
@@ -40,6 +50,8 @@ public class Promo {
     public void setValue(Integer value) {
         this.value = value;
     }
+    public void setPromoService(String promoService) {this.promoService = promoService;}
+    public void setPromoLink(String promoLink) {this.promoLink = promoLink;}
 
     public void setPromoName(String promoName) {
         this.promoName = promoName;

@@ -40,6 +40,9 @@ public class PromoController {
         promo.setPromoName(updatedPromo.getPromoName());
         promo.setValue(updatedPromo.getValue());
         promo.setStatus(updatedPromo.getStatus());
+        promo.setPromoService(updatedPromo.getPromoService());
+        promo.setPromoLink(updatedPromo.getPromoLink());
+
         return promoRepository.save(promo);
     }
 
